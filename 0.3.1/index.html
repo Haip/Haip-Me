@@ -1,0 +1,54 @@
+<!DOCTYPE HTML PUBLIC "-//W3C//DTD HTML 4.01//EN" "http://www.w3.org/TR/html4/strict.dtd">
+<html>
+<head>
+    <title>Haip Me</title>
+    <!--[if IE]><script>document.write('<base href="' + location.protocol + '//' + location.host + location.pathname.replace(/\/[^\/]*$/, '/safari/') + '"/>')</script><![endif]-->
+    <base href="safari/">
+    <script id="DC_baseScript">if(navigator.userAgent.indexOf('AppleWebKit/') == -1) document.write('<base href="' + location.protocol + '//' + location.host + location.pathname.replace(/\/[^\/]*$/, '/safari/') + '"/>')</script>
+    <meta http-equiv="content-type" content="text/html; charset=utf-8">
+    <link rel="stylesheet" href="main.css">
+    <script type="text/javascript" src="../Parts/redirector.js"></script>
+    <script type="text/javascript" src="Parts/parts.js" charset="utf-8"></script>
+    <script type="text/javascript" src="main.js" charset="utf-8"></script>
+    <script type="text/javascript" src="jquery.js"></script>
+</head>
+<body onload="load();">
+    <div id="webcam">
+    </div>
+    <canvas id="canvas" width="320" height="241"></canvas>
+    <script type="text/javascript" src="jquery.webcam.js"></script>
+    <script type="text/javascript" src="jquery.xcolor.js"></script>
+    <div id="box">
+        <div id="Capture_Button"></div>
+        <div id="Minimieren_Label"></div>
+        <div id="R_Label_A"></div>
+        <div id="G_Label_A"></div>
+        <div id="B_Label_A"></div>
+        <input id="R_Slider_A" type="range" min="0" value="255" max="510" onchange="change(event)">
+        <input id="G_Slider_A" type="range" min="0" value="255" max="510" onchange="change(event)">
+        <input id="B_Slider_A" type="range" min="0" value="255" max="510" onchange="change(event)">
+        <div id="Invertieren_Label"></div>
+        <div id="R_Checkbox_B">
+            <input type="checkbox" name="Checkbox" id="R_Input_B" onchange="change(event)">
+            <div id="R_Label_B">R</div>
+        </div>
+        <div id="G_Checkbox_G">
+            <input type="checkbox" name="Checkbox" id="G_Input_B" onchange="change(event)">
+            <div id="G_Label_B">G</div>
+        </div>
+        <div id="B_Checkbox_B">
+            <input type="checkbox" name="Checkbox" id="B_Input_B" onchange="change(event)">
+            <div id="B_Label_B">B</div>
+        </div>
+        <div id="Effekt1_Box">
+            <input type="checkbox" name="Checkbox" id="Effekt1_Input" onchange="change(event)">
+            <div id="Effekt1_Label">Effekt 1</div>
+        </div>
+        <div id="Effekte_Label"></div>
+        <div id="Effekt2_Box">
+            <input type="checkbox" name="Checkbox" id="Effekt2_Input" onchange="change(event)">
+            <div id="Effekt2_Label">Effekt 2</div>
+        </div>
+    </div>
+</body>
+</html>
